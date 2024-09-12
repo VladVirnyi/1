@@ -1,12 +1,32 @@
 name = "Влад"
 surname = "Вірний"
 age = 16
-list1=(name, surname, age)
-list2=(type(name), type(surname), type(age))
+a = type(name)
+b = type(surname)
+c = type(age)
+list1=[name, surname, age]
+list2=[a, b, c]
+list_string=[]
+list_int=[]
 print(list1, list2)
-if type(name) == type(surname) and type(name) == type(age):
-    print("Усі типи даних однакові - str")
-elif type(name) == type(surname) != type(age):
-    print("Дві з трьох змінних мають тип данних str")
-else:
-    print("Тип данних переважно int")
+
+if a==str:
+    list_string.append(a)
+elif a==int:
+    list_int.append(a)
+if b==str:
+    list_string.append(b)
+elif b==int:
+    list_int.append(b)
+if c==str:
+    list_string.append(c)
+elif c==int:
+    list_int.append(c)
+
+print(list_string)
+print(list_int)
+
+if len(list_string) > len(list_int):
+    print("Тип даних str переважає")
+elif len(list_int) > len(list_string):
+    print("Тип даних int переважає")
