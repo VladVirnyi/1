@@ -24,7 +24,7 @@ def sort_anaconda(anaconda):
         elif type(i) == str:
             str_list.append(i)
     num_list.sort()
-    str_list.sort()
+    str_list.sort(key=str.lower)
     return num_list + str_list
 
 result_anaconda = anaconda(anaconda_list)
