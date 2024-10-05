@@ -13,8 +13,6 @@ def anaconda(anaconda_list):
             right_list.append(chislo)
     return right_list
 
-result_anaconda = anaconda(anaconda_list)
-
 def sort_anaconda(anaconda):
     num_list = []
     str_list = []
