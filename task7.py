@@ -25,9 +25,8 @@ def main():
     search_product_by_id()
     send_welcome()
     handle_message()
-    bot.polling()
 
 if __name__ == "__main__":
     main()
 
-# bot.polling()
+bot.polling()
